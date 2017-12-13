@@ -107,16 +107,15 @@ tr:nth-child(even) {
 					<h3>Nordstrom Inc</h3>
 					<strong>Engineer 2</strong>
 					<ul>
-						<li>Part of Data and Services Org at Nordstrom specifically focusing on the customer space. My team is responsible for
-                            collecting, storing, processing and providing all information that relates to customer, whether that's an individual customer's preference
-                            to shopping history.</li>
-						<li>Responsible for creating big data pipelines by setting up Apache Spark Clusters on Amazon AWS and developing code to
-                            get all the customer data from different enterprise data persistence systems dealing with challenges of scale and time.</li>
-						<li>Responsible for developing and maintaining a real time data pipeline for processing customer orders using amazon Kinesis and storing information
-                            in amazon Dynamodb. As part of this work, developing micro-services to expose public facing apis using amazon API gateway, Cognito and Route53 taking
-                            authorization, authentication and auditing into consideration.</li>
-                        <li>Working with telegraf, influxdb and graphana to report both operational and business metrics.</li>
-                        <li>Developing amazon lambda scripts using NodeJs for continuous health monitoring of our systems, and propagating alerts to different alerting systems for further event diagnosis.</li>
+						<li>Part of the customer profile services ( CPS ) team, where we source data and expose public facing APIs for actual end customers on Nordstrom.com.</li>
+						<li>Responsible for setting up a spark cluster and running spark jobs to move over large datasets ( around 0.5 B records ) to 
+							operational datastore (DynamoDB) in a lossless timely fashion introducing fault tolerance and failure retry mechanisms.</li>
+						<li>Responsible for setting up consumers to consume data from AWS Kinesis streams, curate and persist them in near real time fashion. </li>
+                        <li>Responsible for creating a Rest Based Public API involving token based authentication and authorization using Amazon API Gateway, Amazon Cognito and AWS lambda.</li>
+						<li>Set up health monitoring for all the involved systems using AWS lambda and integrated pagerduty and slack using amazon SNS. </li>
+						<li>Architecting enterprise applications using serverless technologies leading to cost optimizations, 
+							better monitoring and auditing and championing separation of concerns.</li>
+						<li>Setup artillery scripts to performance test APIs and publish results to grafana dashboard. </li>
 					</ul>
 				</div>
 
@@ -150,7 +149,7 @@ tr:nth-child(even) {
 							aggregating social media feeds from different channels using several exposed REST APIs.   </li>
 						<li>Full stack developer responsible for creating several RESTful web services using
 							J2EE/Spring and being one of the key contributors towards creation of a company-wide
-							Node­Angular web application stack.</li>
+							Node Angular web application stack.</li>
 					</ul>
 				</div>
 
@@ -160,7 +159,7 @@ tr:nth-child(even) {
 					<ul>
 						<li>Developed applications for integration middleware platform where modular applications
 							were being developed as part of the OSGI architecture.</li>
-						<li>Worked on JBOSS Fuse ESB, Camel Mediation Router, Apache Active­MQ, Restful Web
+						<li>Worked on JBOSS Fuse ESB, Camel Mediation Router, Apache Active MQ, Restful Web
 							Services and XSLT Transforms. </li>
 						<li>Collaborated with multiple teams to agree on contracts and created Interface agreement
 							documents. </li>
@@ -177,6 +176,30 @@ tr:nth-child(even) {
 						<li>Guided senior students with their design projects. </li>
 					</ul>
 				</div>
+			</div>
+
+
+			<div class="row">
+					<section id="skills">
+						<div class="col_12 title">
+							<h2> Open Source Libraries Authored </h2>
+						</div>
+						<div class="col_12">
+							<ul>
+								<li>Spring actuator cloudwatch ( Easy integration of Spring boot actuator with AWS Cloudwatch metrics ) : 
+									https://github.com/dipayan90/spring-actuator-cloudwatch
+								</li>
+								<li>
+									Autoerroretry ( Retires retriable errors and sends non retriable errors to DLQ in a seamless fashion ) :
+									https://github.com/dipayan90/autoerroretry
+								</li>
+								<li>
+									Anomaly detection ( Detects anomalies in timeseries data ): 
+									https://github.com/dipayan90/anomaly-detect-core
+								</li>
+							</ul>
+						</div>
+					</section>
 			</div>
 
             <div class="row">
