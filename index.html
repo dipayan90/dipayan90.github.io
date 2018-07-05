@@ -63,11 +63,11 @@ tr:nth-child(even) {
 		<div class="container">
 			<div class="row">
 				<div class="col_4 clearleft" >
-					<img class="mobile-hide" src="/static/images/dipayan.jpg" title="courtesy of Beverly Wang - http://www.pinjing.net" alt="IllustratedSketch"/>
+					<img class="mobile-hide" src="/static/images/profile.jpg"/>
 				</div>
 
 				<div class="col_8 omega">
-					Engineer 2 at Nordstrom Inc <br/>
+					Senior Engineer at Nordstrom Inc <br/>
 					<strong>email: </strong>
 					<a class="email">dipayan90@gmail.com</a>
 					</br>
@@ -101,6 +101,20 @@ tr:nth-child(even) {
 
 				<div class="col_12 title">
 					<h2>Experience</h2>
+				</div>
+
+				<div class="col_12">
+					<h3>Nordstrom Inc</h3>
+					<strong>Senior Engineer</strong>
+					<ul>
+						<li> Working for Machine Learning Pipeline Team, where we solve ML needs of other teams across the organization. </li>
+						<li> Work primarily involves plumbing massive amounts of data from different sources filesystems ( HDFS, S3 ) , Streams ( Kinesis, Kafka ) , Data warehouses ( Redshift ) into a data-lake solution ( currently S3 ) </li>
+						<li> During this process ETLs are run to preprocess the data for different ML needs. The ETL is primarily done using Apache Spark, however other tools like Apache NiFi , AWS Lambda are also used </li>
+						<li> Lot of focus is provided on robustness of the pipeline from error-handling to monitoring to auditing pieces. </li>
+						<li> Views are created using Apache Hive/ Presto on data stored in data-lake. </li>
+						<li> Feature vectors are extracted from datalake and a ML model is chosen based off the Usecase. Model fitting and serving is done for realtime customer requests.</li>
+						<li> All infrastructure is provisioned using Terraform , and Apache airflow acts as the dag scheduler that glues all the pieces together. </li>
+					</ul>
 				</div>
 
 				<div class="col_12">
