@@ -2,9 +2,32 @@
 
 ## Amazon Web Services
 
+### Senior Software Engineer - AWS 
+
+**Dates Employed:** Jun 2022 – Present
+
+**Location:** Greater Seattle Area
+
+* Lead a 10 member team during design, implementation and delivery phases of a project, that enabled customers to create templates for common repeatable tasks and integrate it with amazon connect's ecosystem developing multiple UIs and launching several AWS public APIs. 
+* Work with application security engineers ensuring systems are secure and have adequate access control mechanisms in place. Come up with a vulnerability analysis plan indicating risks and mitigations. Develop mechanisms to ensure software is continually safe to use in a CI/CD environment. 
+* Develop a robust operational readiness plan, ensuring systems are highly available and enough instrumentation is in place for quick recovery incase of operational incidents. 
+* Work with management and product on delivery timelines, prioritize and assign tasks . Represent team in org wide forums. 
+* Mentor subordinates, and help them grow and develop.* Lead a 10 member team during design, implementation and delivery phases of a project, that enabled customers to create templates for common repeatable tasks and integrate it with amazon connect's ecosystem developing multiple UIs and launching several AWS public APIs. * Work with application security engineers ensuring systems are secure and have adequate access control mechanisms in place. Come up with a vulnerability analysis plan indicating risks and mitigations. Develop mechanisms to ensure software is continually safe to use in a CI/CD environment. * Develop a robust operational readiness plan, ensuring systems are highly available and enough instrumentation is in place for quick recovery incase of operational incidents. * Work with management and product on delivery timelines, prioritize and assign tasks . Represent team in org wide forums. * Mentor subordinates, and help them grow and develop.
+
+**Skills:** Mentoring · Leadership · Security · Project Delivery
+
 ### Software Engineer - AWS 
 
-* To be updated. 
+**Dates Employed:** Jan 2020 – Jun 2022
+
+**Location:** Greater Seattle Area
+
+* Design and develop an omni-channel , channel agnostic orchestration platform to handle contacts for amazon connect. This platform handles ~40 MM contacts every month, across multiple regions, helping support mission critical business systems and processes for multiple businesses. 
+* Implement core pieces of a state machine tackling distributed system problems like dual writes, concurrent request processing while ensuring high availability and handling requests at scale. 
+* Design and develop re-usable and extensible software helping support multiple use-cases and unblocking development and delivery of several key projects reducing duplicity across work streams and reducing development costs. 
+* Lead multiple key operational improvement initiatives like ensuring deployment safety in a CI/CD environment, developing per customer throttling and adding automated load test capabilities ensuring high availability of critical system infrastructure.
+
+**Skills:** Distributed Systems · Finite State Machines · Large Scale Systems
 
 ## Nordstrom
 ### Senior Engineer - ML Platform
