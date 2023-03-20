@@ -1,9 +1,8 @@
 site_name: Dipayan Chattopadhyay
 site_url: https://dipayan90.github.io
 repo_url: https://github.com/dipayan90/dipayan90.github.io
-repo_name: Edit Me
-edit_uri: edit/master/docs/
-docs_dir: documentation
+repo_name: Abour Dipayan
+docs_dir: docs/
 
 nav:
   - Connect: index.md
