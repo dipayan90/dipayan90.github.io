@@ -2,14 +2,80 @@ site_name: Dipayan Chattopadhyay
 site_url: https://dipayan90.github.io
 repo_url: https://github.com/dipayan90/dipayan90.github.io
 repo_name: About Dipayan
+site_author: Dipayan Chattopadhyay
+site_description: Professional portfolio of Dipayan Chattopadhyay, Senior Software Engineer at AWS
 docs_dir: docs/
 
 nav:
-  - Connect: index.md
-  - Introduction: summary.md
+  - Home: index.md
+  - About Me: summary.md
   - Experience: experience.md
-  - OpenSource: opensource.md
-  - Skills: skills.md
-  - Miscellaneous: miscellaneous.md
+  - Projects: opensource.md
+  - Skills & Expertise: skills.md
+  - Personal: miscellaneous.md
 
-theme: material
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - header.autohide
+    - content.code.copy
+  logo: assets/favicon.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dipayan90
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/dchattopadhyay
+    - icon: fontawesome/brands/wordpress
+      link: http://dipayan90.wordpress.com
+    - icon: fontawesome/solid/envelope
+      link: mailto:dipayan90@gmail.com
+  css:
+    - assets/css/custom.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - admonition
+  - pymdownx.details
+
+copyright: Copyright &copy; 2023 Dipayan Chattopadhyay

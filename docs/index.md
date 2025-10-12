@@ -1,15 +1,176 @@
-![Dipayan Chattopadhyay](assets/profile.JPG)
+<div class="hero" markdown>
 
-# Connect
+<div class="hero-content" markdown>
 
-Software Engineer at Amazon Web Services
+# Dipayan Chattopadhyay
 
-**email:** dipayan90@gmail.com
+<div class="subtitle">Senior Software Engineer at Amazon Web Services</div>
 
-**blog:** [dipayan90.wordpress.com](http://dipayan90.wordpress.com)
+<div class="tagline">Building scalable distributed systems and leading high-performing engineering teams</div>
 
-**linkedin:** [www.linkedin.com/in/dchattopadhyay](http://www.linkedin.com/in/dchattopadhyay)
+<div class="cta-buttons">
+  <a href="https://drive.google.com/file/d/1laT67xxMLH0JHuavO3VTqt0qcclG4BIU/view?usp=sharing" class="md-button md-button--primary" target="_blank">Download CV</a>
+  <a href="#quick-links" class="md-button">Explore Portfolio</a>
+</div>
 
-**github:** [github.com/dipayan90](http://github.com/dipayan90)
+</div>
 
-[Download CV](https://drive.google.com/file/d/1laT67xxMLH0JHuavO3VTqt0qcclG4BIU/view?usp=sharing)
+<div class="profile-container">
+  <img src="assets/profile.JPG" alt="Dipayan Chattopadhyay" class="profile-image">
+</div>
+
+</div>
+
+## About Me
+
+Software engineer with 9+ years of experience developing complex distributed systems in enterprise environments. I specialize in leading projects involving API development, UI solutions, and data processing systems while fostering high-performing engineering teams.
+
+My expertise includes:
+
+* **Leadership**: Leading technical teams through complex projects from design to delivery
+* **Architecture**: Designing resilient, scalable distributed systems
+* **Engineering**: Building enterprise-grade solutions with modern tech stacks
+* **Cloud**: Extensive experience with AWS services and cloud architecture
+
+<div class="grid-section" id="quick-links" markdown>
+
+<div class="grid-card" markdown>
+## Experience
+* Senior Software Engineer at AWS
+* Former Engineer at Nordstrom, CDK Global
+* 9+ years in distributed systems
+* [Learn more →](experience.md)
+</div>
+
+<div class="grid-card" markdown>
+## Skills & Expertise
+* Java, Python, JavaScript, Scala
+* AWS Services
+* Distributed Systems
+* Big Data Processing
+* [View all skills →](skills.md)
+</div>
+
+<div class="grid-card" markdown>
+## Open Source Projects
+* Contributed to multiple projects
+* Developed libraries and tools
+* Passionate about sharing knowledge
+* [See projects →](opensource.md)
+</div>
+
+<div class="grid-card" markdown>
+## Personal
+* IEEE Member
+* Multilingual (5 languages)
+* Sports enthusiast
+* [More about me →](miscellaneous.md)
+</div>
+
+</div>
+
+<style>
+/* Hero section styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  color: var(--md-primary-fg-color);
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.cta-buttons {
+  margin-bottom: 2rem;
+}
+
+.cta-buttons .md-button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-container {
+  flex: 0 0 250px;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--md-primary-fg-color);
+}
+
+/* Grid cards for sections */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.grid-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+.grid-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grid-card h2 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+  font-size: 1.4rem;
+}
+
+.grid-card ul {
+  padding-left: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .profile-container {
+    margin: 0 auto 2rem;
+  }
+  
+  .hero-content {
+    width: 100%;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+</style>
