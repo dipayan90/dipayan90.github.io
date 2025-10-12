@@ -2,7 +2,7 @@
 
 <div class="profile-container">
   <div class="profile-image-wrapper">
-    <img src="assets/profile.JPG" alt="Dipayan Chattopadhyay" class="profile-image">
+    <img src="../assets/profile.JPG" alt="Dipayan Chattopadhyay" class="profile-image">
   </div>
   <div class="profile-content">
     <p class="intro-text">
