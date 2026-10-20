@@ -1,0 +1,61 @@
+/* Custom CSS for Dipayan Chattopadhyay's portfolio site */
+
+/* Global adjustments */
+:root {
+  --md-text-font: "Roboto", sans-serif;
+  --md-code-font: "Roboto Mono", monospace;
+}
+
+/* Enhance link styling */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Improve content readability */
+.md-content {
+  line-height: 1.7;
+}
+
+/* Enhance blockquotes */
+blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: 1rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Better table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+  font-weight: 500;
+}
+
+td, th {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .md-content {
+    padding: 1rem;
+  }
+}
