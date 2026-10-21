@@ -4,12 +4,12 @@
 
 # Dipayan Chattopadhyay
 
-<div class="subtitle">Senior Software Engineer at Amazon Web Services</div>
+<div class="subtitle">Software Development Manager at Amazon Web Services</div>
 
 <div class="tagline">Building scalable distributed systems and leading high-performing engineering teams</div>
 
 <div class="cta-buttons">
-  <a href="https://drive.google.com/file/d/1laT67xxMLH0JHuavO3VTqt0qcclG4BIU/view?usp=sharing" class="md-button md-button--primary" target="_blank">Download CV</a>
+  <a href="https://www.linkedin.com/in/dchattopadhyay" class="md-button md-button--primary" target="_blank" rel="noopener">LinkedIn</a>
   <a href="#quick-links" class="md-button">Explore Portfolio</a>
 </div>
 
@@ -23,7 +23,7 @@
 
 ## About Me
 
-Software engineer with 9+ years of experience developing complex distributed systems in enterprise environments. I specialize in leading projects involving API development, UI solutions, and data processing systems while fostering high-performing engineering teams.
+Software engineering leader with over 10 years of experience building complex distributed systems in enterprise environments. Since September 2023 I have managed an organization of 20 engineers across 4 pods at AWS, delivering mission-critical customer experience features for Amazon Connect used by thousands of enterprises globally.
 
 My expertise includes:
 
@@ -36,9 +36,9 @@ My expertise includes:
 
 <div class="grid-card" markdown>
 ## Experience
-* Senior Software Engineer at AWS
+* Software Development Manager at AWS (since September 2023)
 * Former Engineer at Nordstrom, CDK Global
-* 9+ years in distributed systems
+* Over 10 years in distributed systems
 * [Learn more →](experience.md)
 </div>
 
@@ -53,8 +53,8 @@ My expertise includes:
 
 <div class="grid-card" markdown>
 ## Open Source Projects
-* Contributed to multiple projects
-* Developed libraries and tools
+* Spring Actuator CloudWatch, Deep Learning Image Similarity, Autoerroretry
+* Contributed to Nordstrom Big-data Profiler
 * Passionate about sharing knowledge
 * [See projects →](opensource.md)
 </div>
@@ -62,7 +62,7 @@ My expertise includes:
 <div class="grid-card" markdown>
 ## Personal
 * IEEE Member
-* Multilingual (5 languages)
+* Multilingual (6 languages)
 * Sports enthusiast
 * [More about me →](miscellaneous.md)
 </div>
@@ -174,3 +174,7 @@ My expertise includes:
   }
 }
 </style>
+
+---
+
+*Last reviewed: 2026-10*

@@ -6,13 +6,13 @@
   </div>
   <div class="profile-content">
     <p class="intro-text">
-      I'm a Senior Software Engineer at AWS with 9+ years of experience developing complex distributed systems. 
-      With a passion for scalable architecture and cloud solutions, I've led multiple high-impact projects 
-      that have shaped enterprise-grade applications used by millions of users.
+      I'm a Software Development Manager at AWS with over 10 years of experience developing complex distributed
+      systems. Since September 2023 I have managed an organization of 20 engineers across 4 pods, delivering
+      mission-critical customer experience features for Amazon Connect used by thousands of enterprises globally.
     </p>
     <div class="profile-stats">
       <div class="stat">
-        <div class="stat-number">9+</div>
+        <div class="stat-number">10+</div>
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat">
@@ -24,8 +24,8 @@
         <div class="stat-label">Open Source Projects</div>
       </div>
       <div class="stat">
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Team Members Led</div>
+        <div class="stat-number">20</div>
+        <div class="stat-label">Engineers Led</div>
       </div>
     </div>
   </div>
@@ -67,8 +67,15 @@
     <div class="education-details">
       <h3>Master of Science in Computer Science</h3>
       <h4>University of Cincinnati</h4>
-      <p>Thesis: Data Mining Techniques for Pattern Recognition in Large Datasets</p>
-      <p class="education-date">2011 - 2013</p>
+      <p class="education-date">2012 - 2014</p>
+    </div>
+  </div>
+  <div class="education-card">
+    <div class="education-logo srm-logo">SRM</div>
+    <div class="education-details">
+      <h3>Bachelor of Technology in Computer Science</h3>
+      <h4>SRM University</h4>
+      <p class="education-date">2008 - 2012</p>
     </div>
   </div>
 </div>
@@ -170,6 +177,8 @@
 
 /* Education styling */
 .education-section {
+  display: grid;
+  gap: 1.5rem;
   margin: 2rem 0;
 }
 
@@ -193,6 +202,16 @@
   background-position: center;
   background-repeat: no-repeat;
   flex-shrink: 0;
+}
+
+.srm-logo {
+  background-color: #0b3d91;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .uc-logo {
@@ -240,3 +259,7 @@
   }
 }
 </style>
+
+---
+
+*Last reviewed: 2026-10*

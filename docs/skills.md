@@ -1,7 +1,15 @@
 # Skills & Expertise
 
 <div class="skills-intro">
-  <p>With 9+ years of experience in software engineering, I've developed expertise across multiple domains, technologies, and frameworks. My focus has been on building scalable distributed systems, cloud solutions, and data processing pipelines.</p>
+  <p>With over 10 years of experience in software engineering, I've developed expertise across multiple domains, technologies, and frameworks. My focus has been on building scalable distributed systems, cloud solutions, and data processing pipelines.</p>
+</div>
+
+## Top Skills
+
+<div class="skill-tags">
+  <span class="skill-tag">Artificial Intelligence (AI)</span>
+  <span class="skill-tag">Engineering Management</span>
+  <span class="skill-tag">Systems Development Management</span>
 </div>
 
 ## Technical Skills
@@ -302,3 +310,7 @@
   }
 }
 </style>
+
+---
+
+*Last reviewed: 2026-10*

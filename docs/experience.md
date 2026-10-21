@@ -1,14 +1,50 @@
 # Professional Experience
 
 <div class="experience-intro">
-  <p>With over 9 years of software engineering experience across multiple industries, I've built expertise in distributed systems, cloud architecture, and technical leadership. Below is a timeline of my professional journey.</p>
+  <p>With over 10 years of software engineering experience across multiple industries, I've built expertise in distributed systems, cloud architecture, and technical leadership. Below is a timeline of my professional journey.</p>
 </div>
 
 <div class="timeline">
 
   <div class="timeline-item">
     <div class="timeline-dot"></div>
-    <div class="timeline-date">2022 - Present</div>
+    <div class="timeline-date">2023 - Present</div>
+    <div class="timeline-content">
+      <div class="job-header">
+        <div class="company-logo aws-logo"></div>
+        <div>
+          <h2>Software Development Manager</h2>
+          <h3>Amazon Web Services</h3>
+          <div class="job-meta">
+            <span class="job-location"><i class="location-icon">📍</i> Greater Seattle Area</span>
+            <span class="job-date">September 2023 - Present</span>
+          </div>
+        </div>
+      </div>
+      <div class="job-description">
+        <ul class="job-highlights">
+          <li>Built and scaled a high-performing organization of 20 engineers across 4 pods, delivering mission-critical customer experience features for Amazon Connect used by thousands of enterprises globally.</li>
+          <li>Defined and executed a technical strategy and multi-year roadmap balancing near-term delivery with long-term innovation, including Generative AI-driven automation and a unified state machine powering non-media workloads.</li>
+          <li>Instituted engineering excellence programs that cut onboarding time by 50%, raised test coverage from 60% to 90%, and improved code quality through automation and CI/CD modernization.</li>
+          <li>Mentored and promoted four engineers into technical leadership roles, achieving 90% team retention during high-growth phases.</li>
+          <li>Led cross-org initiatives spanning 5+ partner teams, delivering high-visibility, customer-impacting launches with minimal slippage despite aggressive timelines.</li>
+          <li>Operationalized a metrics-driven culture that reduced production incidents by 40% while achieving 99.99% system reliability.</li>
+          <li>Drove org-wide architectural modernization, influencing Connect-wide best practices through technical councils, design reviews, and mentorship programs.</li>
+        </ul>
+        <div class="skills-used">
+          <span class="skill-tag">Engineering Management</span>
+          <span class="skill-tag">Generative AI</span>
+          <span class="skill-tag">Technical Strategy</span>
+          <span class="skill-tag">Operational Excellence</span>
+          <span class="skill-tag">Mentoring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">2022 - 2023</div>
     <div class="timeline-content">
       <div class="job-header">
         <div class="company-logo aws-logo"></div>
@@ -17,17 +53,18 @@
           <h3>Amazon Web Services</h3>
           <div class="job-meta">
             <span class="job-location"><i class="location-icon">📍</i> Greater Seattle Area</span>
-            <span class="job-date">June 2022 - Present</span>
+            <span class="job-date">June 2022 - September 2023</span>
           </div>
         </div>
       </div>
       <div class="job-description">
         <ul class="job-highlights">
-          <li>Lead a 10-member team through design, implementation, and delivery phases of a customer-facing template creation platform integrated with Amazon Connect's ecosystem.</li>
-          <li>Collaborate with application security engineers to implement robust access control mechanisms, develop vulnerability analysis plans, and ensure software security in CI/CD environments.</li>
-          <li>Design and implement operational readiness plans that ensure high availability systems with comprehensive monitoring and incident recovery capabilities.</li>
-          <li>Work closely with management and product teams to establish delivery timelines, prioritize work, and represent the team in organization-wide forums.</li>
-          <li>Mentor team members to foster professional growth and development, creating pathways for career advancement.</li>
+          <li>Led multiple 10+ person teams through projects that delivered critical contact center capabilities, including contact templates and pause-resume, by developing AWS public APIs and admin and customer-facing user interfaces.</li>
+          <li>Collaborated with product management to define functional and non-functional requirements working backwards from customer experience, aligning technical strategy with business needs.</li>
+          <li>Championed automation over manual work for region expansion, operational mitigating actions, and repetitive maintenance tasks.</li>
+          <li>Worked with application security engineers to develop comprehensive access-control and vulnerability-analysis plans, ensuring systems stayed safe to operate as the security risk posture evolved.</li>
+          <li>Bar raised 20+ operational readiness review plans, ensuring launches included operational best practices that reduced incidents and sped up discovery, impact analysis, mitigation, and root-causing.</li>
+          <li>Mentored fellow engineers on public API schema design, analytics, and persona modeling, promoting a culture of collaboration and continuous learning.</li>
         </ul>
         <div class="skills-used">
           <span class="skill-tag">Leadership</span>
@@ -39,8 +76,6 @@
       </div>
     </div>
   </div>
-
-**Skills:** Mentoring · Leadership · Security · Project Delivery
 
   <div class="timeline-item">
     <div class="timeline-dot"></div>
@@ -74,7 +109,6 @@
     </div>
   </div>
 
-**Skills:** Distributed Systems · Finite State Machines · Large Scale Systems
 
   <div class="timeline-item">
     <div class="timeline-dot"></div>
@@ -120,7 +154,7 @@
       <div class="job-header">
         <div class="company-logo nordstrom-logo"></div>
         <div>
-          <h2>Senior Data Engineer</h2>
+          <h2>Senior Engineer</h2>
           <h3>Nordstrom</h3>
           <div class="job-meta">
             <span class="job-location"><i class="location-icon">📍</i> Greater Seattle Area</span>
@@ -246,7 +280,7 @@
         </ul>
         <div class="achievements">
           <h4>Recognition</h4>
-          <p>Earned promotion from Software Engineer I in a record 11 months—faster than any peer in a similar role.</p>
+          <p>Promoted from Software Engineer I after 11 months, with responsibility for nine state and federal carrier integrations at nationwide scale.</p>
         </div>
         <div class="skills-used">
           <span class="skill-tag">REST APIs</span>
@@ -541,3 +575,7 @@
     align-items: flex-start;
   }
 }
+
+---
+
+*Last reviewed: 2026-10*

@@ -9,7 +9,7 @@
   <div class="interest-card">
     <div class="interest-icon">🌐</div>
     <h3>Multilingual</h3>
-    <p>I speak 5 different languages fluently, which has helped me connect with diverse teams and understand global perspectives in my professional and personal life.</p>
+    <p>I speak 6 different languages, at levels from native fluency to elementary, which has helped me connect with diverse teams and understand global perspectives in my professional and personal life.</p>
   </div>
 
   <div class="interest-card">
@@ -166,3 +166,7 @@
   }
 }
 </style>
+
+---
+
+*Last reviewed: 2026-10*

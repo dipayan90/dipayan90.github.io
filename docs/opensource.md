@@ -26,50 +26,26 @@
         <span class="tech-tag">CloudWatch</span>
       </div>
     </div>
-    <div class="project-footer">
-      <div class="github-stats">
-        <div class="github-stat">
-          <span class="stat-icon">⭐</span>
-          <span class="stat-value">Stars</span>
-        </div>
-        <div class="github-stat">
-          <span class="stat-icon">🔀</span>
-          <span class="stat-value">Forks</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="project-card">
     <div class="project-header">
       <h3>Big-data Profiler</h3>
       <div class="project-links">
-        <a href="https://github.com/Nordstrom/bigdata-profiler" class="project-link" target="_blank">
-          <span class="link-icon">📁</span> Repository
+        <a href="https://github.com/dipayan90" class="project-link" target="_blank">
+          <span class="link-icon">👤</span> Nordstrom (org repo)
         </a>
       </div>
     </div>
     <div class="project-content">
       <p class="project-description">
-        A library for profiling large datasets in big data environments. It generates statistical metadata about datasets, making it easier to understand data distributions and quality.
+        A library for profiling large datasets in big data environments. It generates statistical metadata about datasets, making it easier to understand data distributions and quality. Contributed to this project while at Nordstrom.
       </p>
       <div class="project-tech">
         <span class="tech-tag">Scala</span>
         <span class="tech-tag">Apache Spark</span>
         <span class="tech-tag">Big Data</span>
         <span class="tech-tag">Data Analysis</span>
-      </div>
-    </div>
-    <div class="project-footer">
-      <div class="github-stats">
-        <div class="github-stat">
-          <span class="stat-icon">⭐</span>
-          <span class="stat-value">Stars</span>
-        </div>
-        <div class="github-stat">
-          <span class="stat-icon">🔀</span>
-          <span class="stat-value">Forks</span>
-        </div>
       </div>
     </div>
   </div>
@@ -94,18 +70,6 @@
         <span class="tech-tag">Computer Vision</span>
       </div>
     </div>
-    <div class="project-footer">
-      <div class="github-stats">
-        <div class="github-stat">
-          <span class="stat-icon">⭐</span>
-          <span class="stat-value">Stars</span>
-        </div>
-        <div class="github-stat">
-          <span class="stat-icon">🔀</span>
-          <span class="stat-value">Forks</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="project-card">
@@ -128,18 +92,6 @@
         <span class="tech-tag">Distributed Systems</span>
       </div>
     </div>
-    <div class="project-footer">
-      <div class="github-stats">
-        <div class="github-stat">
-          <span class="stat-icon">⭐</span>
-          <span class="stat-value">Stars</span>
-        </div>
-        <div class="github-stat">
-          <span class="stat-icon">🔀</span>
-          <span class="stat-value">Forks</span>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="project-card">
@@ -160,18 +112,6 @@
         <span class="tech-tag">Machine Learning</span>
         <span class="tech-tag">Time Series</span>
         <span class="tech-tag">Analytics</span>
-      </div>
-    </div>
-    <div class="project-footer">
-      <div class="github-stats">
-        <div class="github-stat">
-          <span class="stat-icon">⭐</span>
-          <span class="stat-value">Stars</span>
-        </div>
-        <div class="github-stat">
-          <span class="stat-icon">🔀</span>
-          <span class="stat-value">Forks</span>
-        </div>
       </div>
     </div>
   </div>
@@ -369,3 +309,7 @@
   }
 }
 </style>
+
+---
+
+*Last reviewed: 2026-10*

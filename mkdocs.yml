@@ -3,7 +3,7 @@ site_url: https://dipayan90.github.io
 repo_url: https://github.com/dipayan90/dipayan90.github.io
 repo_name: About Dipayan
 site_author: Dipayan Chattopadhyay
-site_description: Professional portfolio of Dipayan Chattopadhyay, Senior Software Engineer at AWS
+site_description: Professional portfolio of Dipayan Chattopadhyay, Software Development Manager at AWS
 docs_dir: docs/
 
 nav:
@@ -16,6 +16,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -58,7 +59,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/dchattopadhyay
     - icon: fontawesome/brands/wordpress
-      link: http://dipayan90.wordpress.com
+      link: https://dipayan90.wordpress.com
     - icon: fontawesome/solid/envelope
       link: mailto:dipayan90@gmail.com
   css:
@@ -78,4 +79,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-copyright: Copyright &copy; 2023 Dipayan Chattopadhyay
+copyright: Copyright &copy; Dipayan Chattopadhyay
