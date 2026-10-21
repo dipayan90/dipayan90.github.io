@@ -151,12 +151,19 @@ the AWS Software Development Manager role (September 2023 – Present) unless no
 | Major platforms built | 3 | site (owner-authored) |
 | Open source projects | 5 | site (owner-authored, matches the five project cards) |
 | "Multilingual (5 languages)" | **was wrong** → 6 languages | LinkedIn (canonical) |
+| Nordstrom ML-pipeline throughput (Feb–Nov 2018 entry) | 1 million records every 30 seconds | site (owner-authored, not in LinkedIn) |
+| Nordstrom Spark/DynamoDB volume (Feb 2017–Feb 2018 entry) | approximately 500 million records | site (owner-authored, not in LinkedIn) |
 
 ## Site facts
 
 - **Sections and pages:** Home `docs/index.md`; About Me `docs/summary.md`;
   Experience `docs/experience.md`; Projects `docs/opensource.md`; Skills &
   Expertise `docs/skills.md`; Personal `docs/miscellaneous.md`.
+- **Personal items on `miscellaneous.md`:** IEEE Cincinnati graduate-student
+  chapter membership, VIBHA Seattle volunteer work, the reading list, and
+  sports interests are `site (owner-authored)`. They do not appear on the
+  LinkedIn profile; they are kept as the owner's personal voice and are not
+  regenerated into any later artifact as profile facts.
 - **Footer year:** the copyright year is rendered at build time from the MkDocs
   build clock, not hard-coded. `mkdocs.yml` sets
   `copyright: Copyright &copy; Dipayan Chattopadhyay` (no year), and
