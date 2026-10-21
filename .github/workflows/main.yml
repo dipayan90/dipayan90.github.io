@@ -35,6 +35,9 @@ jobs:
       - name: Check internal links
         run: python scripts/check_links.py site
 
+      - name: Check Q&A corpus
+        run: python scripts/check_qa.py site
+
   publish:
     name: Publish docs
     if: github.event_name == 'push'

@@ -13,6 +13,7 @@ nav:
   - Projects: opensource.md
   - Skills & Expertise: skills.md
   - Personal: miscellaneous.md
+  - Ask: ask.md
 
 theme:
   name: material
@@ -51,6 +52,12 @@ theme:
 
 plugins:
   - search
+
+hooks:
+  - hooks/qa_build.py
+
+extra_javascript:
+  - assets/javascripts/ask.js
 
 extra:
   social:
