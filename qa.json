@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "current-role",
+      "q": "What is Dipayan's current role?",
+      "a": "Dipayan Chattopadhyay is a Software Development Manager at Amazon Web Services (AWS) in the Greater Seattle Area. He has held the role since September 2023.",
+      "keywords": [
+        "current job title",
+        "what does he do at aws",
+        "employer",
+        "where does he work"
+      ],
+      "source": "docs/index.md",
+      "sourceLabel": "Home",
+      "sourceUrl": ".."
+    },
+    {
+      "id": "years-of-experience",
+      "q": "How many years of software engineering experience does Dipayan have?",
+      "a": "He has over 10 years of software engineering experience building complex distributed systems in enterprise environments.",
+      "keywords": [
+        "how experienced is he",
+        "seniority",
+        "career length",
+        "how long has he been coding"
+      ],
+      "source": "docs/index.md",
+      "sourceLabel": "Home",
+      "sourceUrl": ".."
+    },
+    {
+      "id": "contact",
+      "q": "How can I contact Dipayan?",
+      "a": "His email is dipayan90@gmail.com. He is on LinkedIn at linkedin.com/in/dchattopadhyay, writes on the blog dipayan90.wordpress.com, and publishes code on github.com/dipayan90.",
+      "keywords": [
+        "email address",
+        "linkedin profile",
+        "reach out",
+        "blog",
+        "github profile"
+      ],
+      "source": "docs/index.md",
+      "sourceLabel": "Home",
+      "sourceUrl": ".."
+    },
+    {
+      "id": "team-size",
+      "q": "How large is the team Dipayan manages?",
+      "a": "Since September 2023 he has managed an organization of 20 engineers across 4 pods at AWS, delivering mission-critical customer experience features for Amazon Connect.",
+      "keywords": [
+        "how many engineers does he lead",
+        "team size",
+        "direct reports",
+        "headcount",
+        "pods"
+      ],
+      "source": "docs/summary.md",
+      "sourceLabel": "About Me",
+      "sourceUrl": "../summary/"
+    },
+    {
+      "id": "education-ms",
+      "q": "What is Dipayan's master's degree?",
+      "a": "He holds a Master of Science in Computer Science from the University of Cincinnati, earned 2012 - 2014.",
+      "keywords": [
+        "graduate degree",
+        "university of cincinnati",
+        "masters",
+        "mcs"
+      ],
+      "source": "docs/summary.md",
+      "sourceLabel": "About Me",
+      "sourceUrl": "../summary/"
+    },
+    {
+      "id": "education-btech",
+      "q": "Where did he do his bachelor's degree?",
+      "a": "He earned a Bachelor of Technology in Computer Science at SRM University, 2008 - 2012.",
+      "keywords": [
+        "undergraduate degree",
+        "btech",
+        "srm university",
+        "college"
+      ],
+      "source": "docs/summary.md",
+      "sourceLabel": "About Me",
+      "sourceUrl": "../summary/"
+    },
+    {
+      "id": "connect-orchestration",
+      "q": "What does the Amazon Connect orchestration platform handle?",
+      "a": "The omni-channel, channel-agnostic orchestration platform he designed handles approximately 40 million contacts every month across multiple regions, supporting mission-critical business systems.",
+      "keywords": [
+        "contacts per month",
+        "omni channel platform",
+        "throughput",
+        "scale of the connect platform"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "amazon-connect-features",
+      "q": "What does he do for Amazon Connect?",
+      "a": "As Software Development Manager he delivers mission-critical customer experience features for Amazon Connect, used by thousands of enterprises globally, and drove a unified state machine powering non-media workloads.",
+      "keywords": [
+        "what is his job at amazon",
+        "connect leadership",
+        "customer experience features",
+        "what product does he own"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "state-machine",
+      "q": "What distributed systems problems did the state machine work solve?",
+      "a": "The state machine he implemented addressed dual writes and concurrent request processing while keeping the system highly available at scale.",
+      "keywords": [
+        "dual writes",
+        "concurrency problems",
+        "finite state machine",
+        "distributed consistency"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "sre-contact-center",
+      "q": "What did he do as a Senior Software Engineer at AWS?",
+      "a": "He led multiple teams of more than ten people that shipped contact center capabilities such as contact templates and pause-resume, developing AWS public APIs and admin and customer-facing user interfaces.",
+      "keywords": [
+        "senior software engineer role",
+        "public api development",
+        "contact center features",
+        "pause resume"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "op-readiness",
+      "q": "What operational readiness work has he done?",
+      "a": "He bar raised 20+ operational readiness review plans so that launches include operational best practices, reducing incidents and speeding up discovery, impact analysis, mitigation and root-causing.",
+      "keywords": [
+        "operational readiness reviews",
+        "launch quality",
+        "production safety",
+        "orr"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "cross-org",
+      "q": "How does he work across teams?",
+      "a": "He led cross-org initiatives spanning 5+ partner teams, delivering high-visibility, customer-impacting launches with minimal slippage despite aggressive timelines.",
+      "keywords": [
+        "cross team collaboration",
+        "partner teams",
+        "cross organizational work",
+        "launch delivery"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "mentorship",
+      "q": "How does Dipayan develop engineers?",
+      "a": "He mentored and promoted four engineers into technical leadership roles and kept 90% team retention during high-growth phases.",
+      "keywords": [
+        "promotions",
+        "mentoring",
+        "retention",
+        "developing junior engineers"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "onboarding-metrics",
+      "q": "What engineering excellence results did he achieve?",
+      "a": "The engineering excellence programs he instituted cut onboarding time by 50% and raised test coverage from 60% to 90%.",
+      "keywords": [
+        "onboarding speed",
+        "test coverage improvement",
+        "quality metrics",
+        "engineering excellence"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "reliability-metrics",
+      "q": "What reliability results did his metrics-driven culture produce?",
+      "a": "Operationalizing a metrics-driven culture reduced production incidents by 40% while achieving 99.99% system reliability.",
+      "keywords": [
+        "incident reduction",
+        "reliability",
+        "uptime",
+        "metrics driven culture"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "ml-platform-nordstrom",
+      "q": "What was the ML platform at Nordstrom for?",
+      "a": "He architected a machine learning platform that let data scientists run frequent experiments and put models into production quickly, using Apache Spark and Kubernetes for compute, training and serving.",
+      "keywords": [
+        "machine learning platform",
+        "nordstrom ml",
+        "model serving",
+        "ml experimentation"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "data-lake-pipeline",
+      "q": "What did the data pipeline work at Nordstrom involve?",
+      "a": "He built ingestion from HDFS, S3, Kinesis, Kafka and Redshift into an S3 data lake, with ETL written in Apache Spark plus Apache NiFi and AWS Lambda, views served through Hive and Presto, Terraform for infrastructure and Airflow for scheduling.",
+      "keywords": [
+        "data lake",
+        "etl pipelines",
+        "apache spark etl",
+        "airflow dags",
+        "terraform provisioning"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "nordstrom-pipeline-throughput",
+      "q": "How much data did the Nordstrom data pipeline process?",
+      "a": "The high-throughput pipeline was designed and implemented to ingest and process 1 million records every 30 seconds.",
+      "keywords": [
+        "pipeline throughput",
+        "records per second",
+        "high throughput ingestion",
+        "how fast"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "spark-dynamodb-volume",
+      "q": "How many records did the Spark and DynamoDB pipeline move?",
+      "a": "He configured and managed Spark clusters that processed approximately 500 million records and transferred them into DynamoDB operational datastores with fault tolerance and retry mechanisms.",
+      "keywords": [
+        "spark cluster",
+        "dynamodb",
+        "customer profile data",
+        "big data volume"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "cdk-personalization",
+      "q": "What did he build on the CDK Global audience management team?",
+      "a": "He worked as a full-stack developer creating Java and Spring microservices and single-page applications with Node.js and AngularJS, plus batch and streaming big data pipelines using Kafka, RabbitMQ, Apache Spark and Akka.",
+      "keywords": [
+        "cdk global",
+        "microservices",
+        "personalization engine",
+        "full stack",
+        "spring boot"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "cdk-social-platform",
+      "q": "What was the CDK Global social media platform for?",
+      "a": "He contributed to a consolidated social media management platform serving over 26,000 car dealerships, aggregating feeds from multiple channels through REST APIs into unified content streams.",
+      "keywords": [
+        "social media management platform",
+        "car dealerships",
+        "cdk global",
+        "content aggregation"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "cdk-promotion",
+      "q": "Why was he promoted at CDK Global?",
+      "a": "He was promoted from Software Engineer I after 11 months, taking on responsibility for nine state and federal carrier integrations at nationwide scale.",
+      "keywords": [
+        "promotion at cdk",
+        "career progression",
+        "first promotion",
+        "carrier integrations"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "ups-internship",
+      "q": "What did he do during the UPS internship?",
+      "a": "As a Software Development Intern at UPS he built integration middleware with OSGI, working with JBoss Fuse ESB, Apache Camel, ActiveMQ, REST and XSLT alongside business analysts and system architects.",
+      "keywords": [
+        "ups internship",
+        "integration middleware",
+        "apache camel",
+        "first industry role"
+      ],
+      "source": "docs/experience.md",
+      "sourceLabel": "Experience",
+      "sourceUrl": "../experience/"
+    },
+    {
+      "id": "open-source-projects",
+      "q": "Which open source projects has Dipayan published?",
+      "a": "His projects are Spring Actuator CloudWatch, Deep Learning Image Similarity, Autoerroretry and Time-Series Anomaly Detection, plus contributions to the Big-data Profiler project from his time at Nordstrom.",
+      "keywords": [
+        "github repositories",
+        "side projects",
+        "published libraries",
+        "open source work"
+      ],
+      "source": "docs/opensource.md",
+      "sourceLabel": "Projects",
+      "sourceUrl": "../opensource/"
+    },
+    {
+      "id": "conference-talk",
+      "q": "What conference talk has Dipayan given?",
+      "a": "He presented Building an ML Platform at Scale, a talk on the challenges of building a scalable machine learning platform that supports data scientists through the whole model development lifecycle.",
+      "keywords": [
+        "youtube talk",
+        "speaker",
+        "ml platform at scale",
+        "conference presentation"
+      ],
+      "source": "docs/opensource.md",
+      "sourceLabel": "Projects",
+      "sourceUrl": "../opensource/"
+    },
+    {
+      "id": "top-skills",
+      "q": "What are Dipayan's top skills?",
+      "a": "His top skills are Artificial Intelligence, Engineering Management and Systems Development Management.",
+      "keywords": [
+        "key strengths",
+        "areas of expertise",
+        "linkedin top skills",
+        "specialisms"
+      ],
+      "source": "docs/skills.md",
+      "sourceLabel": "Skills & Expertise",
+      "sourceUrl": "../skills/"
+    },
+    {
+      "id": "programming-languages",
+      "q": "Which programming languages does Dipayan work with?",
+      "a": "The languages on his skills page are Java, Python, JavaScript and Scala.",
+      "keywords": [
+        "coding languages",
+        "tech stack",
+        "what languages does he know",
+        "programming skills"
+      ],
+      "source": "docs/skills.md",
+      "sourceLabel": "Skills & Expertise",
+      "sourceUrl": "../skills/"
+    },
+    {
+      "id": "languages",
+      "q": "Which languages does Dipayan speak?",
+      "a": "He speaks 6 languages: Telugu and Bengali natively or bilingually, English and Hindi at full professional proficiency, and Tamil and Japanese at an elementary level.",
+      "keywords": [
+        "multilingual",
+        "spoken languages",
+        "bilingual",
+        "fluency"
+      ],
+      "source": "docs/miscellaneous.md",
+      "sourceLabel": "Personal",
+      "sourceUrl": "../miscellaneous/"
+    },
+    {
+      "id": "personal-interests",
+      "q": "What does Dipayan do outside work?",
+      "a": "He is an avid sports player in tennis, racquetball and ping pong, a member of the IEEE graduate student body for the Cincinnati chapter, and an active member of VIBHA Seattle, a nonprofit supporting underprivileged children.",
+      "keywords": [
+        "hobbies",
+        "sports",
+        "volunteering",
+        "community service",
+        "ieee membership"
+      ],
+      "source": "docs/miscellaneous.md",
+      "sourceLabel": "Personal",
+      "sourceUrl": "../miscellaneous/"
+    },
+    {
+      "id": "reading-list",
+      "q": "Which books have influenced Dipayan?",
+      "a": "His reading list includes Designing Data-Intensive Applications by Martin Kleppmann, The Phoenix Project by Gene Kim, Kevin Behr and George Spafford, and Clean Code by Robert C. Martin.",
+      "keywords": [
+        "favourite books",
+        "book recommendations",
+        "reading",
+        "what does he read"
+      ],
+      "source": "docs/miscellaneous.md",
+      "sourceLabel": "Personal",
+      "sourceUrl": "../miscellaneous/"
+    }
+  ]
+}
