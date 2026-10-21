@@ -59,3 +59,78 @@ tr:nth-child(even) {
     padding: 1rem;
   }
 }
+
+/* Ask about Dipayan (static Q&A) */
+[hidden] {
+  display: none !important;
+}
+
+.qa-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+#qa-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.qa-button {
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.1rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color, #fff);
+  font: inherit;
+  cursor: pointer;
+}
+
+#qa-status {
+  margin: 0.8rem 0 0;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.qa-results {
+  list-style: none;
+  padding-left: 0;
+}
+
+.qa-results > li {
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding: 0.2rem 0 0.2rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.qa-r-q {
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+}
+
+.qa-r-a {
+  margin: 0 0 0.2rem;
+}
+
+.qa-r-source,
+.qa-source,
+.qa-fallback-note {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.qa-item summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.qa-item .qa-a {
+  margin: 0.4rem 0 0.2rem;
+}
