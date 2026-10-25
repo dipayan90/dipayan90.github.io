@@ -15,9 +15,15 @@ nav:
   - Personal: miscellaneous.md
   - Ask: ask.md
 
+not_in_nav: /blog/.*/
+draft_docs: blog/posts/drafts/
+
 theme:
   name: material
   custom_dir: overrides
+  # Material defaults to Roboto (theme-level), so deleting the key alone still
+  # loads Google Fonts. `false` is what removes the request (B6′).
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -33,17 +39,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
   features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.tracking
-    - navigation.instant
     - search.highlight
     - search.share
-    - header.autohide
     - content.code.copy
   logo: assets/favicon.png
   favicon: assets/favicon.png
@@ -52,9 +50,20 @@ theme:
 
 plugins:
   - search
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts
+      post_url_format: "{slug}"
+      categories: false
+      archive: false
+      authors: false
 
 hooks:
   - hooks/qa_build.py
+  - hooks/feed.py
+
+extra_css:
+  - assets/css/custom.css
 
 extra_javascript:
   - assets/javascripts/ask.js
@@ -69,8 +78,6 @@ extra:
       link: https://dipayan90.wordpress.com
     - icon: fontawesome/solid/envelope
       link: mailto:dipayan90@gmail.com
-  css:
-    - assets/css/custom.css
 
 markdown_extensions:
   - pymdownx.highlight:

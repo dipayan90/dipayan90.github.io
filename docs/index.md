@@ -16,7 +16,7 @@
 </div>
 
 <div class="profile-container">
-  <img src="assets/profile.JPG" alt="Dipayan Chattopadhyay" class="profile-image">
+  <img src="assets/img/portrait-800.jpg" alt="Dipayan Chattopadhyay" class="profile-image">
 </div>
 
 </div>
