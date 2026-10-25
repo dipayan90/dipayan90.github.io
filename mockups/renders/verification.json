@@ -1,0 +1,176 @@
+{
+  "screenshots": [
+    {
+      "name": "a-ledger-home-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "a-ledger-home-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "a-ledger-experience-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "a-ledger-experience-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "b-console-home-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "b-console-home-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "b-console-experience-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "b-console-experience-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "c-story-home-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "c-story-home-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "c-story-experience-1440x900.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "c-story-experience-390x844.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "b-home-1440x900-light.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "b-home-390x844-light.png",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "a-ledger-focus.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "b-console-focus.png",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "c-story-focus.png",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "layout": [
+    {
+      "dir": "a-ledger",
+      "page": "home",
+      "viewport": "1440x900",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 31.5,
+      "bodyTextLength": 3959
+    },
+    {
+      "dir": "a-ledger",
+      "page": "home",
+      "viewport": "390x844",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 31.5,
+      "bodyTextLength": 3959
+    },
+    {
+      "dir": "b-console",
+      "page": "home",
+      "viewport": "1440x900",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 31,
+      "bodyTextLength": 2844
+    },
+    {
+      "dir": "b-console",
+      "page": "home",
+      "viewport": "390x844",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 31,
+      "bodyTextLength": 2729
+    },
+    {
+      "dir": "c-story",
+      "page": "home",
+      "viewport": "1440x900",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 32,
+      "bodyTextLength": 4140
+    },
+    {
+      "dir": "c-story",
+      "page": "home",
+      "viewport": "390x844",
+      "horizontalOverflow": false,
+      "navItems": 6,
+      "nameVisible": true,
+      "roleVisible": true,
+      "yearsVisible": true,
+      "scopeVisible": true,
+      "experienceRouteVisible": true,
+      "footerHeight": 32,
+      "bodyTextLength": 4140
+    }
+  ],
+  "errors": []
+}
