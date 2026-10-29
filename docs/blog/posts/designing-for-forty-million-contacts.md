@@ -2,6 +2,7 @@
 title: "Designing for Forty Million Contacts a Month"
 date: 2026-10-25
 description: "What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams."
+slug: designing-for-forty-million-contacts
 ---
 
 # Designing for Forty Million Contacts a Month
