@@ -3,10 +3,7 @@ title: "Home — Dipayan Chattopadhyay"
 description: "Editorial portfolio of Dipayan Chattopadhyay, Software Development Manager at AWS."
 ---
 
-<a class="skip-link" href="#main">Skip to content</a>
-
-<main id="main">
-  <section class="hero">
+<section class="hero">
     <div class="hero-copy">
       <p class="eyebrow">Software Development Manager at AWS</p>
       <h1>Dipayan<br>Chattopadhyay</h1>
@@ -173,4 +170,3 @@ description: "Editorial portfolio of Dipayan Chattopadhyay, Software Development
       </div>
     </div>
   </section>
-</main>

@@ -2,7 +2,7 @@
 
 {% block header %}
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="masthead">
+<header class="masthead" data-md-component="header">
   <a class="wordmark" href="{{ nav.homepage.url | url if nav.homepage else '/' | url }}">Dipayan Chattopadhyay</a>
   <nav aria-label="Primary">
     <ul>
@@ -18,10 +18,21 @@
 </header>
 {% endblock %}
 
+{% block htmltitle %}
+{%- if page.meta and page.meta.title -%}
+<title>{{ page.meta.title | e }}</title>
+{%- elif page.is_homepage -%}
+<title>{{ config.site_name | e }}</title>
+{%- else -%}
+<title>{{ page.title | striptags | e }} - {{ config.site_name | e }}</title>
+{%- endif -%}
+{% endblock %}
+
+{#- Material's sidebar and table of contents are not part of the shell; the span is the skip target and works on every layout (including the blog index and 404). -#}
+{% block site_nav %}<span id="main" tabindex="-1"></span>{% endblock %}
+
 {% block content %}
-<main id="main">
-  {{ page.content }}
-</main>
+{{ page.content }}
 {% endblock %}
 
 {% block footer %}
