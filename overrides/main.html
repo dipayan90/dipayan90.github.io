@@ -1,28 +1,50 @@
 {% extends "base.html" %}
 
-{% block site_meta %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  {% if page.meta and page.meta.author %}
-    <meta name="author" content="{{ page.meta.author }}">
-  {% elif config.site_author %}
-    <meta name="author" content="{{ config.site_author }}">
-  {% endif %}
-  {% if page.canonical_url %}
-    <link rel="canonical" href="{{ page.canonical_url }}">
-  {% endif %}
-  {% if page.previous_page %}
-    <link rel="prev" href="{{ page.previous_page.url | url }}">
-  {% endif %}
-  {% if page.next_page %}
-    <link rel="next" href="{{ page.next_page.url | url }}">
-  {% endif %}
-  {% if "rss" in config.plugins %}
-    <link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.created') }}" href="{{ 'feed_rss_created.xml' | url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.updated') }}" href="{{ 'feed_rss_updated.xml' | url }}">
-  {% endif %}
-  <link rel="icon" href="{{ config.theme.favicon | url }}">
-  <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.6.21">
+{% block header %}
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead" data-md-component="header">
+  <a class="wordmark" href="{{ nav.homepage.url | url if nav.homepage else '/' | url }}">Dipayan Chattopadhyay</a>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="{{ '' | url }}"{% if page and page.file and page.file.src_path == 'index.md' %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ 'summary/' | url }}"{% if page and page.file and page.file.src_path == 'summary.md' %} aria-current="page"{% endif %}>About Me</a></li>
+      <li><a href="{{ 'experience/' | url }}"{% if page and page.file and page.file.src_path == 'experience.md' %} aria-current="page"{% endif %}>Experience</a></li>
+      <li><a href="{{ 'opensource/' | url }}"{% if page and page.file and page.file.src_path == 'opensource.md' %} aria-current="page"{% endif %}>Projects</a></li>
+      <li><a href="{{ 'skills/' | url }}"{% if page and page.file and page.file.src_path == 'skills.md' %} aria-current="page"{% endif %}>Skills &amp; Expertise</a></li>
+      <li><a href="{{ 'miscellaneous/' | url }}"{% if page and page.file and page.file.src_path == 'miscellaneous.md' %} aria-current="page"{% endif %}>Personal</a></li>
+      <li><a href="{{ 'ask/' | url }}"{% if page and page.file and page.file.src_path == 'ask.md' %} aria-current="page"{% endif %}>Ask</a></li>
+    </ul>
+  </nav>
+</header>
+{% endblock %}
+
+{% block htmltitle %}
+{%- if page.meta and page.meta.title -%}
+<title>{{ page.meta.title | e }}</title>
+{%- elif page.is_homepage -%}
+<title>{{ config.site_name | e }}</title>
+{%- else -%}
+<title>{{ page.title | striptags | e }} - {{ config.site_name | e }}</title>
+{%- endif -%}
+{% endblock %}
+
+{#- Material's sidebar and table of contents are not part of the shell; the span is the skip target and works on every layout (including the blog index and 404). -#}
+{% block site_nav %}<span id="main" tabindex="-1"></span>{% endblock %}
+
+{% block content %}
+{{ page.content }}
+{% endblock %}
+
+{% block footer %}
+<footer class="site-footer">
+  <div class="md-copyright">
+    {% if config.copyright %}
+      <div class="md-copyright__highlight">
+        {{ config.copyright.replace("&copy;", "&copy; " ~ build_date_utc.year) }}
+      </div>
+    {% endif %}
+  </div>
+</footer>
 {% endblock %}
 
 {% block extrahead %}
