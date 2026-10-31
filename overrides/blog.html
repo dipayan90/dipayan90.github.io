@@ -1,0 +1,42 @@
+{#-
+  Blog index. Extends the site shell instead of Material's stock blog.html so
+  each entry shows the contracted front-matter description instead of the
+  plugin excerpt, which would repeat the whole post. Still driven by the blog
+  plugin's `posts`, `pagination`, and `.md-post*` markup.
+-#}
+{% extends "main.html" %}
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        {{ page.content }}
+      </header>
+      {% for post in posts %}
+        <article class="md-post md-post--excerpt">
+          <header class="md-post__header">
+            <div class="md-post__meta md-meta">
+              <ul class="md-meta__list">
+                <li class="md-meta__item">
+                  <time datetime="{{ post.config.date.created }}">
+                    {{- post.config.date.created | date -}}
+                  </time>
+                </li>
+              </ul>
+            </div>
+          </header>
+          <div class="md-post__content md-typeset">
+            <h2><a href="{{ post.url | url }}">{{ post.title }}</a></h2>
+            {% if post.meta.description %}
+              <p class="md-post__description">{{ post.meta.description }}</p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+      {% if pagination %}
+        {% block pagination %}
+          {% include "partials/pagination.html" %}
+        {% endblock %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
