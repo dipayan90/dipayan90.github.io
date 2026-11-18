@@ -1,0 +1,35 @@
+{#- SEO + social meta. Included from overrides/main.html inside block extrahead. -#}
+{%- if page.meta and page.meta.title -%}
+  {%- set title = page.meta.title -%}
+{%- elif page.is_homepage -%}
+  {%- set title = config.site_name -%}
+{%- else -%}
+  {%- set title = page.title | default(config.site_name) | striptags -%}
+{%- endif -%}
+{%- set description = page.meta.description if page.meta and page.meta.description else config.site_description -%}
+{%- set image = page.meta.image if page.meta and page.meta.image else none -%}
+{%- if image and image.startswith('http') -%}
+  {%- set og_image = image -%}
+{%- elif image -%}
+  {%- set og_image = config.site_url.rstrip('/') ~ '/' ~ image.lstrip('/') -%}
+{%- else -%}
+  {%- set og_image = config.site_url.rstrip('/') ~ '/assets/og-card.png' -%}
+{%- endif -%}
+{%- set page_url = page.canonical_url or (config.site_url.rstrip('/') ~ '/' ~ page.url) -%}
+{%- set og_type = 'article' if page.meta and page.meta.date else 'website' -%}
+<meta name="description" content="{{ description | e }}">
+<meta property="og:title" content="{{ title | e }}">
+<meta property="og:description" content="{{ description | e }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:url" content="{{ page_url | e }}">
+<meta property="og:image" content="{{ og_image | e }}">
+<meta property="og:site_name" content="{{ config.site_name | e }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title | e }}">
+<meta name="twitter:description" content="{{ description | e }}">
+<meta name="twitter:image" content="{{ og_image | e }}">
+{%- if page.meta and page.meta.date %}
+<script type="application/ld+json">
+{{ {"@context": "https://schema.org", "@type": "BlogPosting", "headline": title, "datePublished": page.meta.date | string, "description": description, "url": page_url, "image": og_image, "author": {"@type": "Person", "name": "Dipayan Chattopadhyay"}, "mainEntityOfPage": {"@type": "WebPage", "@id": page_url}} | tojson }}
+</script>
+{%- endif %}
