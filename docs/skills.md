@@ -3,73 +3,71 @@ title: "Skills & Expertise — Dipayan Chattopadhyay"
 description: "Technical skills and areas of expertise for Dipayan Chattopadhyay."
 ---
 
-# Skills & Expertise
-
-<div class="skills-intro">
-  <p>With over 10 years of experience in software engineering, I've developed expertise across multiple domains, technologies, and frameworks. My focus has been on building scalable distributed systems, cloud solutions, and data processing pipelines.</p>
+<div class="page-head">
+  <p class="page-meta">Skills</p>
+  <h1>Skills &amp; Expertise</h1>
+  <p class="page-intro">With over 10 years of experience in software engineering, I've developed expertise across multiple domains, technologies, and frameworks. My focus has been on building scalable distributed systems, cloud solutions, and data processing pipelines.</p>
 </div>
 
-## Top Skills
+<div class="entries">
 
-<div class="skill-tags">
-  <span class="skill-tag">Artificial Intelligence (AI)</span>
-  <span class="skill-tag">Engineering Management</span>
-  <span class="skill-tag">Systems Development Management</span>
-</div>
-
-## Technical Skills
-
-<div class="skill-category">
-  <h3>Programming Languages</h3>
-  <div class="skill-container">
-    <div class="skill">
-      <div class="skill-name">Java</div>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 95%"></div>
-      </div>
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">01</span>
     </div>
-    <div class="skill">
-      <div class="skill-name">Python</div>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 90%"></div>
-      </div>
+    <div class="entry-body">
+      <h2>Top Skills</h2>
+      <ul class="tags">
+        <li>Artificial Intelligence (AI)</li>
+        <li>Engineering Management</li>
+        <li>Systems Development Management</li>
+      </ul>
     </div>
-    <div class="skill">
-      <div class="skill-name">JavaScript</div>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 85%"></div>
-      </div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Scala</div>
-      <div class="skill-bar">
-        <div class="skill-level" style="width: 80%"></div>
-      </div>
-    </div>
-  </div>
-</div>
+  </article>
 
-<div class="skill-category">
-  <h3>Frameworks & Libraries</h3>
-  <div class="skill-tags">
-    <span class="skill-tag">Spring Framework</span>
-    <span class="skill-tag">NodeJS</span>
-    <span class="skill-tag">Express JS</span>
-    <span class="skill-tag">Apache Camel</span>
-    <span class="skill-tag">RedHat Fuse</span>
-    <span class="skill-tag">React</span>
-    <span class="skill-tag">Vue.js</span>
-    <span class="skill-tag">AngularJS</span>
-    <span class="skill-tag">Bootstrap</span>
-  </div>
-</div>
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">02</span>
+    </div>
+    <div class="entry-body">
+      <h2>Programming Languages</h2>
+      <ul class="tags">
+        <li>Java · 95%</li>
+        <li>Python · 90%</li>
+        <li>JavaScript · 85%</li>
+        <li>Scala · 80%</li>
+      </ul>
+    </div>
+  </article>
 
-<div class="skill-category">
-  <h3>Cloud & DevOps</h3>
-  <div class="skill-grid">
-    <div class="skill-box">
-      <h4>AWS Services</h4>
-      <ul>
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">03</span>
+    </div>
+    <div class="entry-body">
+      <h2>Frameworks &amp; Libraries</h2>
+      <ul class="tags">
+        <li>Spring Framework</li>
+        <li>NodeJS</li>
+        <li>Express JS</li>
+        <li>Apache Camel</li>
+        <li>RedHat Fuse</li>
+        <li>React</li>
+        <li>Vue.js</li>
+        <li>AngularJS</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">04</span>
+    </div>
+    <div class="entry-body">
+      <h2>Cloud &amp; DevOps</h2>
+      <h3 class="subrole">AWS Services</h3>
+      <ul class="tags">
         <li>IAM</li>
         <li>S3</li>
         <li>Lambda</li>
@@ -80,10 +78,8 @@ description: "Technical skills and areas of expertise for Dipayan Chattopadhyay.
         <li>ECS</li>
         <li>EMR</li>
       </ul>
-    </div>
-    <div class="skill-box">
-      <h4>DevOps Tools</h4>
-      <ul>
+      <h3 class="subrole">DevOps Tools</h3>
+      <ul class="tags">
         <li>Docker</li>
         <li>Kubernetes</li>
         <li>GitLab</li>
@@ -95,77 +91,78 @@ description: "Technical skills and areas of expertise for Dipayan Chattopadhyay.
         <li>ELK Stack</li>
       </ul>
     </div>
-  </div>
-</div>
+  </article>
 
-<div class="skill-category">
-  <h3>Data Technologies</h3>
-  <div class="skill-grid">
-    <div class="skill-box">
-      <h4>Databases</h4>
-      <ul>
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">05</span>
+    </div>
+    <div class="entry-body">
+      <h2>Data Technologies</h2>
+      <h3 class="subrole">Databases</h3>
+      <ul class="tags">
         <li>MongoDB</li>
         <li>Redis</li>
         <li>MySQL</li>
         <li>Oracle</li>
       </ul>
-    </div>
-    <div class="skill-box">
-      <h4>Big Data Frameworks</h4>
-      <ul>
+      <h3 class="subrole">Big Data Frameworks</h3>
+      <ul class="tags">
         <li>Apache Spark</li>
         <li>Apache Hive</li>
         <li>Apache NiFi</li>
         <li>Apache Airflow</li>
       </ul>
-    </div>
-    <div class="skill-box">
-      <h4>Message Brokers</h4>
-      <ul>
+      <h3 class="subrole">Message Brokers</h3>
+      <ul class="tags">
         <li>RabbitMQ</li>
         <li>ActiveMQ</li>
         <li>Kafka</li>
       </ul>
     </div>
-  </div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">06</span>
+    </div>
+    <div class="entry-body">
+      <h2>Data Analytics Tools</h2>
+      <ul class="tags">
+        <li>MATLAB</li>
+        <li>Orange</li>
+        <li>Tableau</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-marker">
+      <span class="entry-num" aria-hidden="true">07</span>
+    </div>
+    <div class="entry-body">
+      <h2>Core Competencies</h2>
+      <ul class="skills-list">
+        <li>
+          <h3>System Architecture</h3>
+          <p>Designing scalable, resilient distributed systems that handle high throughput and maintain data integrity.</p>
+        </li>
+        <li>
+          <h3>Cloud Engineering</h3>
+          <p>Implementing cloud-native solutions that leverage managed services to reduce operational overhead.</p>
+        </li>
+        <li>
+          <h3>API Development</h3>
+          <p>Creating secure, performant, and well-documented APIs that enable seamless integration.</p>
+        </li>
+        <li>
+          <h3>Data Processing</h3>
+          <p>Building batch and streaming data pipelines that transform raw data into actionable insights.</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+
 </div>
 
-<div class="skill-category">
-  <h3>Data Analytics Tools</h3>
-  <div class="skill-tags">
-    <span class="skill-tag">MATLAB</span>
-    <span class="skill-tag">Orange</span>
-    <span class="skill-tag">Tableau</span>
-  </div>
-</div>
-
-## Core Competencies
-
-<div class="competencies">
-  <div class="competency-card">
-    <div class="competency-icon">🏗️</div>
-    <h4>System Architecture</h4>
-    <p>Designing scalable, resilient distributed systems that handle high throughput and maintain data integrity.</p>
-  </div>
-  <div class="competency-card">
-    <div class="competency-icon">☁️</div>
-    <h4>Cloud Engineering</h4>
-    <p>Implementing cloud-native solutions that leverage managed services to reduce operational overhead.</p>
-  </div>
-  <div class="competency-card">
-    <div class="competency-icon">🛠️</div>
-    <h4>API Development</h4>
-    <p>Creating secure, performant, and well-documented APIs that enable seamless integration.</p>
-  </div>
-  <div class="competency-card">
-    <div class="competency-icon">📊</div>
-    <h4>Data Processing</h4>
-    <p>Building batch and streaming data pipelines that transform raw data into actionable insights.</p>
-  </div>
-</div>
-
-
-
----
-
-*Last reviewed: 2026-10*
+<p class="page-meta">Last reviewed: 2026-10</p>
