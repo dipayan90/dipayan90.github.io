@@ -1,0 +1,16 @@
+PASS B1 style tags=none, custom.css link counts=all 1
+PASS B2 7 labels on 10 of 10 pages
+FAIL B6' external origins=['opensource/index.html img src=https://img.youtube.com/vi/F8C58OZW3-M/0.jpg'], google fonts=none, JS files=37, JS raw bytes=1063439, JS gzip bytes=281321
+FAIL B8 literals missing=none, baseline CV link present=False, baseline nav=['Home', 'About Me', 'Experience', 'Projects', 'Skills & Expertise', 'Personal', 'Ask'] (expected token 1laT67xxMLH0JHuavO3VTqt0qcclG4BIU)
+PASS B9 1876 bytes current vs 1876 baseline
+FAIL S1 titles=10 unique=10, descriptions=10 unique=9, max length=150, duplicate descriptions={'Professional portfolio of Dipayan Chattopadhyay, Software Development Manager at AWS': ['404.html', 'blog/index.html']}, tag counts=404.html:2, ask/index.html:2, blog/designing-for-forty-million-contacts/index.html:2, blog/index.html:2, experience/index.html:2, index.html:2, miscellaneous/index.html:2, opensource/index.html:2, skills/index.html:2, summary/index.html:2
+FAIL S2 pages without canonical=['404.html'], posts missing from sitemap=none, robots Sitemap=True
+PASS S3 RSS 2.0 items=1, issues=none
+PASS S4 issues=none
+PASS S5 issues=none
+FAIL S6 issues=['opensource/index.html img https://img.youtube.com/vi/F8C58OZW3-M/0.jpg missing width/height', 'summary/index.html img ../assets/img/portrait-800.jpg missing width/height'], largest image=83476 bytes (assets/img/portrait-800.webp), portrait webp candidates=3
+PASS S7 h1 counts=all 1, stylesheet missing=none
+PASS BR1 issues=none, entries=1
+PASS BR3 post URLs=['/blog/designing-for-forty-million-contacts/'], invalid=none
+PASS BR5 site/blog/drafts exists=False, leaked slugs=none
+RESULT: 10 PASS, 5 FAIL
