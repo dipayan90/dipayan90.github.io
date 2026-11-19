@@ -19,6 +19,7 @@ from urllib.parse import urljoin, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = (ROOT / (sys.argv[1] if len(sys.argv) > 1 else "site")).resolve()
+EVIDENCE = ROOT / "qa" / "phase2"
 ORIGIN = "https://dipayan90.github.io"
 CV_TOKEN = "1laT67xxMLH0JHuavO3VTqt0qcclG4BIU"
 NAV_LABELS = [
@@ -163,6 +164,48 @@ def main():
               len(pages) - len(nav_bad), len(pages),
               "; " + "; ".join(nav_bad) if nav_bad else ""))
 
+    # B3: axe-core must report zero violations on home, blog index, post and Ask.
+    axe_bad, axe_counts, axe_total = [], [], 0
+    for name in ("home", "blog", "post", "ask"):
+        try:
+            report = json.loads((EVIDENCE / "axe-{}.json".format(name)).read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            axe_bad.append("{} unreadable ({})".format(name, exc))
+            continue
+        violations = report.get("violations", [])
+        axe_total += len(violations)
+        axe_counts.append("{}:{}".format(name, len(violations)))
+        if violations:
+            rules = sorted({v.get("id", "unknown") for v in violations})
+            axe_bad.append("{}:{} {}".format(name, len(violations), "/".join(rules)))
+    check(results, "B3", not axe_bad,
+          "violations per page={}, total={}, issues={}".format(
+              ", ".join(axe_counts) or "none", axe_total, axe_bad or "none"))
+
+    # B4: Lighthouse mobile performance >= 90 and accessibility >= 95 on every audited page.
+    lh_bad, lh_scores = [], []
+    for name in ("home", "blog", "post"):
+        try:
+            report = json.loads((EVIDENCE / "lighthouse-{}.json".format(name)).read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            lh_bad.append("{} unreadable ({})".format(name, exc))
+            continue
+        settings = report.get("configSettings", {})
+        form = settings.get("formFactor") or settings.get("emulatedFormFactor")
+        categories = report.get("categories", {})
+        perf = categories.get("performance", {}).get("score")
+        a11y = categories.get("accessibility", {}).get("score")
+        lh_scores.append("{}={}/{}".format(name, perf, a11y))
+        if form != "mobile":
+            lh_bad.append("{} formFactor={}".format(name, form))
+        if not isinstance(perf, (int, float)) or perf < 0.90:
+            lh_bad.append("{} performance={}".format(name, perf))
+        if not isinstance(a11y, (int, float)) or a11y < 0.95:
+            lh_bad.append("{} accessibility={}".format(name, a11y))
+    check(results, "B4", not lh_bad,
+          "mobile perf/a11y scores={}, issues={}".format(
+              ", ".join(lh_scores) or "none", lh_bad or "none"))
+
     # B6': no external origin in link/script/img href/src; no Google font refs; JS byte report.
     external, font_refs = [], []
     for rel, pg in pages.items():
@@ -227,7 +270,7 @@ def main():
             dup_tags.append("{}:{}".format(rel, len(values)))
         descriptions.append(values[0] if values else "")
     s1_ok = (len(set(titles)) == len(titles) and len(set(descriptions)) == len(descriptions)
-             and all(len(d) <= 160 for d in descriptions))
+             and all(len(d) <= 160 for d in descriptions) and not dup_tags)
     by_description = {}
     for rel, pg in pages.items():
         values = pg["p"].meta("description")
@@ -241,7 +284,9 @@ def main():
 
     # S2: canonical on every page, posts in sitemap, robots Sitemap directive.
     no_canonical = [
-        rel for rel, pg in pages.items() if not pg["p"].find("link", rel="canonical")
+        "{}:{}".format(rel, len(pg["p"].find("link", rel="canonical")))
+        for rel, pg in pages.items()
+        if len(pg["p"].find("link", rel="canonical")) != 1
     ]
     sitemap_path = SITE / "sitemap.xml"
     sitemap = sitemap_path.read_text(encoding="utf-8") if sitemap_path.exists() else ""
@@ -251,7 +296,7 @@ def main():
     robots_path = SITE / "robots.txt"
     robots_ok = robots_path.exists() and "Sitemap:" in robots_path.read_text(encoding="utf-8")
     check(results, "S2", not no_canonical and not posts_not_in_sitemap and robots_ok,
-          "pages without canonical={}, posts missing from sitemap={}, robots Sitemap={}".format(
+          "pages with canonical count != 1={}, posts missing from sitemap={}, robots Sitemap={}".format(
               no_canonical or "none", posts_not_in_sitemap or "none", robots_ok))
 
     # S3: RSS 2.0 feed, blog posts only, absolute link/guid, newest first.

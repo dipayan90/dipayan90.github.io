@@ -15,9 +15,13 @@
 {%- else -%}
   {%- set og_image = config.site_url.rstrip('/') ~ '/assets/og-card.png' -%}
 {%- endif -%}
-{%- set page_url = page.canonical_url or (config.site_url.rstrip('/') ~ '/' ~ page.url) -%}
+{%- set page_path = page.url if page else '404.html' -%}
+{%- set page_url = (page.canonical_url if page else none) or (config.site_url.rstrip('/') ~ '/' ~ page_path.lstrip('/')) -%}
 {%- set og_type = 'article' if page.meta and page.meta.date else 'website' -%}
-<meta name="description" content="{{ description | e }}">
+{#- The theme emits the description; emit a canonical only for pages it skips (404). -#}
+{%- if not (page and page.canonical_url) %}
+<link rel="canonical" href="{{ page_url | e }}">
+{%- endif %}
 <meta property="og:title" content="{{ title | e }}">
 <meta property="og:description" content="{{ description | e }}">
 <meta property="og:type" content="{{ og_type }}">
