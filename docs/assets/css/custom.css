@@ -696,6 +696,11 @@ footer.site-footer {
   font-size: 14px;
 }
 
+/* Material paints this near-white; keep footer copy readable on the paper background. */
+.md-copyright__highlight {
+  color: var(--muted);
+}
+
 @media (max-width: 960px) {
   .masthead {
     flex-wrap: wrap;

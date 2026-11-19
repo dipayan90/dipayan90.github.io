@@ -7,7 +7,7 @@ description: "About Dipayan Chattopadhyay, software engineering leader at AWS."
   <p class="page-meta">About</p>
   <h1>About Me</h1>
   <p class="page-intro">I'm a Software Development Manager at AWS with over 10 years of experience developing complex distributed systems. Since September 2023 I have managed an organization of 20 engineers across 4 pods, delivering mission-critical customer experience features for Amazon Connect used by thousands of enterprises globally.</p>
-  <p><img src="../assets/img/portrait-800.jpg" alt="Dipayan Chattopadhyay" width="400"></p>
+  <p><img src="../assets/img/portrait-800.jpg" alt="Dipayan Chattopadhyay" width="400" height="323"></p>
 </div>
 
 <ul class="personal-facts">

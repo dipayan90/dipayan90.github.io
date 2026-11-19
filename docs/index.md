@@ -15,6 +15,7 @@ description: "Editorial portfolio of Dipayan Chattopadhyay, Software Development
         <div><strong>04</strong><span>Pods</span></div>
       </div>
       <a class="cta" href="experience/">Read the experience <span aria-hidden="true">→</span></a>
+      <a class="cta" href="https://drive.google.com/file/d/1laT67xxMLH0JHuavO3VTqt0qcclG4BIU/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
     </div>
     <figure class="hero-portrait">
       <img src="assets/img/portrait-560.jpg" srcset="assets/img/portrait-320.webp 320w, assets/img/portrait-560.webp 560w, assets/img/portrait-800.webp 800w" sizes="(max-width: 960px) 60vw, 250px" width="560" height="452" alt="Dipayan Chattopadhyay">

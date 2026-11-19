@@ -82,8 +82,7 @@ description: "Selected projects and open source work by Dipayan Chattopadhyay."
     <div class="entry-body">
       <h2>Building an ML Platform at Scale</h2>
       <p>In this talk, I discuss the challenges and solutions in building a scalable ML platform that supports data scientists through the entire model development lifecycle.</p>
-      <p><a href="https://www.youtube.com/watch?v=F8C58OZW3-M" target="_blank"><img src="https://img.youtube.com/vi/F8C58OZW3-M/0.jpg" alt="ML Platform Talk" width="480"></a></p>
-      <p><a href="https://www.youtube.com/watch?v=F8C58OZW3-M" target="_blank">Watch Video</a></p>
+      <p><a href="https://www.youtube.com/watch?v=F8C58OZW3-M" target="_blank" rel="noopener nofollow">Watch Video</a></p>
     </div>
   </article>
 
