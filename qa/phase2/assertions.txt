@@ -1,0 +1,18 @@
+PASS B1 style tags=none, custom.css link counts=all 1
+PASS B2 7 labels on 10 of 10 pages
+PASS B3 violations per page=home:0, blog:0, post:0, ask:0, total=0, issues=none
+PASS B4 mobile perf/a11y scores=home=0.98/0.95, blog=0.93/0.95, post=0.92/0.95, issues=none
+PASS B6' external origins=none, google fonts=none, JS files=37, JS raw bytes=1057471, JS gzip bytes=279262
+PASS B8 literals missing=none, baseline CV link present=True, baseline nav=['Home', 'About Me', 'Experience', 'Projects', 'Skills & Expertise', 'Personal', 'Ask']
+PASS B9 1876 bytes current vs 1876 baseline
+PASS S1 titles=10 unique=10, descriptions=10 unique=10, max length=150, duplicate descriptions=none, tag counts=
+PASS S2 pages with canonical count != 1=none, posts missing from sitemap=none, robots Sitemap=True
+PASS S3 RSS 2.0 items=1, issues=none
+PASS S4 issues=none
+PASS S5 issues=none
+PASS S6 issues=none, largest image=83476 bytes (assets/img/portrait-800.webp), portrait webp candidates=3
+PASS S7 h1 counts=all 1, stylesheet missing=none
+PASS BR1 issues=none, entries=1
+PASS BR3 post URLs=['/blog/designing-for-forty-million-contacts/'], invalid=none
+PASS BR5 site/blog/drafts exists=False, leaked slugs=none
+RESULT: 17 PASS, 0 FAIL

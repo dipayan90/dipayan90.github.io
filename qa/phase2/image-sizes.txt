@@ -1,0 +1,8 @@
+-rw-r--r--  1 dipayan  staff   2065 Nov 18 02:39 docs/assets/favicon.png
+-rw-r--r--  1 dipayan  staff  16134 Nov 18 02:39 docs/assets/img/portrait-320.jpg
+-rw-r--r--  1 dipayan  staff  22484 Nov 18 02:39 docs/assets/img/portrait-320.webp
+-rw-r--r--  1 dipayan  staff  37088 Nov 18 02:39 docs/assets/img/portrait-560.jpg
+-rw-r--r--  1 dipayan  staff  51122 Nov 18 02:39 docs/assets/img/portrait-560.webp
+-rw-r--r--  1 dipayan  staff  61560 Nov 18 02:39 docs/assets/img/portrait-800.jpg
+-rw-r--r--  1 dipayan  staff  83476 Nov 18 02:39 docs/assets/img/portrait-800.webp
+-rw-r--r--  1 dipayan  staff  33768 Nov 18 02:39 docs/assets/og-card.png
