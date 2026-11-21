@@ -8,8 +8,8 @@ to `origin/development`). Run it locally with `python qa/check_phase2.py site`.
 - Base commit: `db5080f`
 - Built site: `site/`, rebuilt by this run on 2026-11-19
 - Checker invocation: `python3 qa/check_phase2.py site`
-- Verdict: **16 PASS / 1 FAIL** — B3 fails on the recorded axe evidence. A
-  failed assertion is a real finding; no evidence file was changed to hide it.
+- Verdict: **17 PASS / 0 FAIL** — all assertions pass, including B3 on the
+  refreshed axe evidence.
 
 ## PASS/FAIL table
 
@@ -17,7 +17,7 @@ to `origin/development`). Run it locally with `python qa/check_phase2.py site`.
 | --- | --- | --- | --- |
 | B1 | PASS | No `<style>` element; every built page links exactly one `assets/css/custom.css` | — |
 | B2 | PASS | All 7 nav labels present on 10/10 built pages | — |
-| B3 | FAIL | axe records 1 `color-contrast` violation on each of home, blog, post and ask (4 total), all on `.md-copyright__highlight` | KAJ-28 |
+| B3 | PASS | axe records 0 violations on home, blog, post and ask after the `db5080f` contrast fix | KAJ-28 |
 | B4 | PASS | Lighthouse mobile: home 0.98/0.95, blog 0.93/0.95, post 0.92/0.95 (performance/accessibility); all at or above thresholds | — |
 | B6' | PASS | No external image origins; no Google Fonts refs. JS: 37 files, 1,057,471 raw bytes, 279,262 gzip bytes | — |
 | B8 | PASS | `Software Development Manager at AWS` and `10+` present; nav labels match `origin/development`; baseline CV link present on built home | — |
@@ -50,17 +50,22 @@ backend fix; B4 reads them as committed evidence.
 
 ### axe-core (WCAG 2.0/2.1 A+AA)
 
-| Page | Violations | Rule | Target |
-| --- | --- | --- | --- |
-| Home | 1 | `color-contrast` (serious) | `.md-copyright__highlight` |
-| Blog index | 1 | `color-contrast` (serious) | `.md-copyright__highlight` |
-| Blog post | 1 | `color-contrast` (serious) | `.md-copyright__highlight` |
-| Ask | 1 | `color-contrast` (serious) | `.md-copyright__highlight` |
+Re-run on 2026-11-21 against the rebuilt site with axe-core 4.10.3, the same
+`wcag2a`, `wcag2aa`, `wcag21a` and `wcag21aa` tags, a 390×844 viewport and a
+local `http.server` on port 8765. All four audited pages report zero violations.
 
-Total: **4 violations across 4 pages** (one distinct rule, one distinct target).
-Raw results: `axe-home.json`, `axe-blog.json`, `axe-post.json`, `axe-ask.json`.
-Branch commit `db5080f` carries a CSS rule for `.md-copyright__highlight`, but
-axe was not re-run, so B3 correctly fails on the recorded evidence.
+| Page | Violations |
+| --- | --- |
+| Home | 0 |
+| Blog index | 0 |
+| Blog post | 0 |
+| Ask | 0 |
+
+Total: **0 violations across 4 pages**. Raw results: `axe-home.json`,
+`axe-blog.json`, `axe-post.json`, `axe-ask.json`. The
+`.md-copyright__highlight` contrast rule comes from branch commit `db5080f` /
+KAJ-55 and is outside this backend patch; KAJ-55 deliberately left the evidence
+bundle untouched.
 
 ### Asset sizes
 
@@ -76,7 +81,8 @@ axe was not re-run, so B3 correctly fails on the recorded evidence.
   The new assertion was checked both ways: zeroing the four committed axe
   reports makes B3 PASS (17 PASS / 0 FAIL); lowering home Lighthouse
   performance to 0.80 makes B4 FAIL (15 PASS / 2 FAIL); both edits were then
-  restored, leaving the reported 16 PASS / 1 FAIL.
+  restored. The four axe reports have now been refreshed with a live
+  zero-violation run, so the recorded verdict is 17 PASS / 0 FAIL.
 - **S1/S2 fix.** `overrides/partials/meta.html` no longer emits a second
   description; the theme remains the single source. It emits the canonical
   only where the theme omits one (the `404.html` page, which has no `page`
@@ -97,8 +103,8 @@ axe was not re-run, so B3 correctly fails on the recorded evidence.
 
 ## Hand back
 
-The only failing assertion is B3, which needs a fresh axe run after the
-parallel contrast fix. S1 and S2 are closed by this patch, and B3/B4 are now
-hard assertions rather than prose observations.
+The axe evidence has been refreshed after the parallel contrast fix, so B3
+passes and the gate exits 0. S1 and S2 are closed by this patch, and B3/B4 are
+now hard assertions rather than prose observations.
 
 KAJ-29 has no failing blog assertion (S3, S4, S5, BR1, BR3, BR5 all PASS).

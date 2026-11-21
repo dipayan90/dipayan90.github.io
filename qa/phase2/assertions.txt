@@ -1,6 +1,6 @@
 PASS B1 style tags=none, custom.css link counts=all 1
 PASS B2 7 labels on 10 of 10 pages
-FAIL B3 violations per page=home:1, blog:1, post:1, ask:1, total=4, issues=['home:1 color-contrast', 'blog:1 color-contrast', 'post:1 color-contrast', 'ask:1 color-contrast']
+PASS B3 violations per page=home:0, blog:0, post:0, ask:0, total=0, issues=none
 PASS B4 mobile perf/a11y scores=home=0.98/0.95, blog=0.93/0.95, post=0.92/0.95, issues=none
 PASS B6' external origins=none, google fonts=none, JS files=37, JS raw bytes=1057471, JS gzip bytes=279262
 PASS B8 literals missing=none, baseline CV link present=True, baseline nav=['Home', 'About Me', 'Experience', 'Projects', 'Skills & Expertise', 'Personal', 'Ask']
@@ -15,4 +15,4 @@ PASS S7 h1 counts=all 1, stylesheet missing=none
 PASS BR1 issues=none, entries=1
 PASS BR3 post URLs=['/blog/designing-for-forty-million-contacts/'], invalid=none
 PASS BR5 site/blog/drafts exists=False, leaked slugs=none
-RESULT: 16 PASS, 1 FAIL
+RESULT: 17 PASS, 0 FAIL

@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-11-19T04:57:17.770Z",
+  "timestamp": "2026-11-21T03:30:59.636Z",
   "url": "http://127.0.0.1:8765/ask/",
   "toolOptions": {
     "runOnly": {
@@ -1578,7 +1578,7 @@
     },
     {
       "id": "color-contrast",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.color",
         "wcag2aa",
@@ -1941,6 +1941,31 @@
           "html": "<p id=\"qa-status\" role=\"status\" aria-live=\"polite\">30 questions answered from this site.</p>",
           "target": [
             "#qa-status"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#6b5f50",
+                "bgColor": "#f6efe2",
+                "contrastRatio": 5.43,
+                "fontSize": "9.6pt (12.8px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.43"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"md-copyright__highlight\">\n        Copyright © 2026 Dipayan Chattopadhyay\n      </div>",
+          "target": [
+            ".md-copyright__highlight"
           ]
         },
         {
@@ -2833,59 +2858,5 @@
     }
   ],
   "incomplete": [],
-  "violations": [
-    {
-      "id": "color-contrast",
-      "impact": "serious",
-      "tags": [
-        "cat.color",
-        "wcag2aa",
-        "wcag143",
-        "TTv5",
-        "TT13.c",
-        "EN-301-549",
-        "EN-9.1.4.3",
-        "ACT"
-      ],
-      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-      "help": "Elements must meet minimum color contrast ratio thresholds",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#fcfaf6",
-                "bgColor": "#f6efe2",
-                "contrastRatio": 1.09,
-                "fontSize": "9.6pt (12.8px)",
-                "fontWeight": "normal",
-                "messageKey": null,
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<body dir=\"ltr\" data-md-color-scheme=\"default\" data-md-color-primary=\"indigo\" data-md-color-accent=\"indigo\">",
-                  "target": [
-                    "body"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element has insufficient color contrast of 1.09 (foreground color: #fcfaf6, background color: #f6efe2, font size: 9.6pt (12.8px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<div class=\"md-copyright__highlight\">\n        Copyright © 2026 Dipayan Chattopadhyay\n      </div>",
-          "target": [
-            ".md-copyright__highlight"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.09 (foreground color: #fcfaf6, background color: #f6efe2, font size: 9.6pt (12.8px), font weight: normal). Expected contrast ratio of 4.5:1"
-        }
-      ]
-    }
-  ]
+  "violations": []
 }
