@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Dipayan Chattopadhyay</title>
+<link>https://dipayan90.github.io/feed.xml</link>
+<description>Professional portfolio of Dipayan Chattopadhyay, Software Development Manager at AWS</description>
+<language>en</language>
+<lastBuildDate>Wed, 18 Nov 2026 07:45:06 +0000</lastBuildDate>
+<item><title>Designing for Forty Million Contacts a Month</title><link>https://dipayan90.github.io/blog/designing-for-forty-million-contacts/</link><guid isPermaLink="true">https://dipayan90.github.io/blog/designing-for-forty-million-contacts/</guid><pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate><description>What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams.</description></item>
+</channel>
+</rss>
