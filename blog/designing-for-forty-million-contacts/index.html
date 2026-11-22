@@ -1,0 +1,269 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams.">
+      
+      
+        <meta name="author" content="Dipayan Chattopadhyay">
+      
+      
+        <link rel="canonical" href="https://dipayan90.github.io/blog/designing-for-forty-million-contacts/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    <title>Designing for Forty Million Contacts a Month</title>
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  
+<meta property="og:title" content="Designing for Forty Million Contacts a Month">
+<meta property="og:description" content="What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://dipayan90.github.io/blog/designing-for-forty-million-contacts/">
+<meta property="og:image" content="https://dipayan90.github.io/assets/og-card.png">
+<meta property="og:site_name" content="Dipayan Chattopadhyay">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Designing for Forty Million Contacts a Month">
+<meta name="twitter:description" content="What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams.">
+<meta name="twitter:image" content="https://dipayan90.github.io/assets/og-card.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "author": {"@type": "Person", "name": "Dipayan Chattopadhyay"}, "datePublished": "2026-10-25", "description": "What building an AWS orchestration platform for roughly 40 million Amazon Connect contacts a month taught me about throughput, correctness, and teams.", "headline": "Designing for Forty Million Contacts a Month", "image": "https://dipayan90.github.io/assets/og-card.png", "mainEntityOfPage": {"@id": "https://dipayan90.github.io/blog/designing-for-forty-million-contacts/", "@type": "WebPage"}, "url": "https://dipayan90.github.io/blog/designing-for-forty-million-contacts/"}
+</script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#designing-for-forty-million-contacts-a-month" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead" data-md-component="header">
+  <a class="wordmark" href="../..">Dipayan Chattopadhyay</a>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="../..">Home</a></li>
+      <li><a href="../../summary/">About Me</a></li>
+      <li><a href="../../experience/">Experience</a></li>
+      <li><a href="../../opensource/">Projects</a></li>
+      <li><a href="../../skills/">Skills &amp; Expertise</a></li>
+      <li><a href="../../miscellaneous/">Personal</a></li>
+      <li><a href="../../ask/">Ask</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          <span id="main" tabindex="-1"></span>
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-10-25 00:00:00+00:00" class="md-ellipsis">October 25, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              4 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+  
+  
+
+
+<h1 id="designing-for-forty-million-contacts-a-month">Designing for Forty Million Contacts a Month</h1>
+<p>Roughly 40 million. That is how many contacts the Amazon Connect orchestration platform I helped design and build carried each month, across multiple regions, while I worked on it. It is an easy number to put on a slide and a hard one to keep true.</p>
+<p>The gap between those two things is most of what I know about building large systems.</p>
+<h2 id="throughput-is-not-a-request-rate">Throughput is not a request rate</h2>
+<p>When people say a system handles 40 million of anything a month, the first instinct is to divide by seconds and treat the result as a capacity target. That math is necessary, but it is not the problem. The platform models a contact as work that moves through steps, and each step has to know where the contact is, what has already happened, and what comes next. The platform is omni-channel, so the work arrives from more than one direction and has to converge on one consistent view of the customer's journey.</p>
+<p>At that volume, the rare cases stop being rare. A retry that happens once in ten thousand normal operations happens thousands of times a month. A race that needs two events to land in the same millisecond still finds a way to happen. Throughput is not the speed of the happy path. It is the rate at which the system can keep thousands of small, ugly edge cases from turning into lost or duplicated work.</p>
+<p>That reframing changes what you build first.</p>
+<h2 id="a-state-machine-is-a-promise">A state machine is a promise</h2>
+<p>I worked on core components of the state machine that coordinates this flow. The interesting problems were not in the normal transitions. They were in the places where distributed systems usually break their promises: dual writes, where two stores can disagree about what happened; concurrent requests, where two workers can act on the same contact at the same time; and high availability, where the system has to keep accepting work while part of it is unhealthy.</p>
+<p>Each of those is solvable in isolation. The difficulty is that they overlap. A retry during a partial outage can become a concurrent request. A concurrent request can turn one write into two. A state machine that is correct only when the network is healthy is not correct at all, because the network is never healthy everywhere at once.</p>
+<p>So the design work was less about adding features and more about making failure boring. Every transition needed a defensible answer to three questions: what happens if this is delivered twice, what happens if two of these arrive at once, and what happens if the store behind it is temporarily unavailable. If the answer was "that should not happen", it was not an answer. At 40 million contacts a month, "should not" is a schedule, not a guarantee.</p>
+<h2 id="operations-are-part-of-the-design">Operations are part of the design</h2>
+<p>I also led work on deployment safety, customer-specific throttling, and automated load testing. Those sound like operational chores next to architecture. They are not. They are how you find out whether the design is true.</p>
+<p>A load test that does not resemble production traffic will happily certify a system that falls over on its first real Monday. Throttling is not just a protective valve; it is an explicit statement about which customers get which share of a shared system under pressure. Deployment safety is the difference between a bad change costing you a rollback and a bad change costing you a region. None of this is separate from throughput. Throughput is a property of the whole system in motion, including the people and processes that change it.</p>
+<p>That lesson followed me into management.</p>
+<h2 id="the-team-is-part-of-the-system">The team is part of the system</h2>
+<p>Since September 2023 I have managed an organization of 20 engineers across 4 pods, delivering mission-critical customer experience features for Amazon Connect. The numbers I care about now look different from the ones I watched as an engineer, but they describe the same underlying property: whether the system can be trusted to keep its promises as it grows and changes.</p>
+<p>Onboarding time came down by 50%. Test coverage went from 60% to 90%. Production incidents fell by 40% while system reliability held at 99.99%. Four engineers moved into technical leadership roles, and the team held 90% retention through high-growth phases. We bar-raised more than 20 operational readiness reviews and worked across 5+ partner teams.</p>
+<p>None of those is a throughput metric in the narrow sense. All of them are throughput metrics in the sense that matters. A team that cannot onboard quickly, cannot test confidently, and cannot operate calmly will not sustain a system that handles tens of millions of contacts a month. Scale exposes the organization as much as it exposes the code.</p>
+<h2 id="what-i-would-tell-someone-starting-this-work">What I would tell someone starting this work</h2>
+<p>Do not design for the average day. The average day is not why the system is hard. Design for the day when a region is degraded, a retry storm is building, and two workers disagree about which step a contact is on. If the system behaves then, the number on the slide is real.</p>
+<p>Forty million is the output. Correctness under load is the product. Everything else, including the org chart, is in service of that distinction.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+<footer class="site-footer">
+  <div class="md-copyright">
+    
+      <div class="md-copyright__highlight">
+        Copyright &copy; 2026 Dipayan Chattopadhyay
+      </div>
+    
+  </div>
+  <a class="footer-writing" href="../">Writing</a>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../assets/javascripts/ask.js"></script>
+      
+    
+  </body>
+</html>
